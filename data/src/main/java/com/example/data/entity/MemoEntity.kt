@@ -6,7 +6,7 @@ import java.util.Date
 
 @Entity
 data class MemoEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long?,
+    @PrimaryKey(autoGenerate = true) val id: Long? = null,
     val updateDate: Date = Date(System.currentTimeMillis()),
     val title: String? = null,
     val contents: String? = null
