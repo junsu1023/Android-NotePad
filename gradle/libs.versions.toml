@@ -13,6 +13,8 @@ material = "1.12.0"
 room_version = "2.6.1"
 gson_version = "2.8.5"
 hilt_version = "2.44"
+hilt-navigation = "1.0.0"
+compose-lifecycle-version = "2.6.0-alpha01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,7 +38,9 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson_version" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt_version" }
-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt_version"}
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt_version" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation" }
+androidx-lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle-version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
